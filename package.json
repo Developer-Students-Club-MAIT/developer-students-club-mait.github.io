@@ -1,0 +1,21 @@
+{
+  "name": "mern-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "concurrently -n 'client,server' \"cd client && npm i\" \"cd server && npm i\"",
+    "dev": "cd server && npm run dev",
+    "pro": "cd server && npm run pro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhupenPal/MERN-Webpack-Boilerplate.git"
+  },
+  "author": "Bhupen Pal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate#readme"
+}

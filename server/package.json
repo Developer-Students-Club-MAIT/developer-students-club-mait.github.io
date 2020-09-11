@@ -1,0 +1,16 @@
+{
+  "name": "mern-server-side",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n 'client,server' \"cd .. && cd client && npm run start\" \"nodemon index.js\"",
+    "pro": "concurrently -n 'client,server' \"cd .. && cd client && npm run pro\" \"nodemon index.js\""
+  },
+  "author": "Bhupen Pal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.18"
+  }
+}
