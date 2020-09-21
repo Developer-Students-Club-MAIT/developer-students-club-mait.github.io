@@ -5,6 +5,7 @@ import "./assets/css/index.scss";
 import Home from "./Screens/Home.jsx";
 import Teams from "./Screens/Teams.jsx";
 
+
 class App extends Component {
   render() {
     return (
