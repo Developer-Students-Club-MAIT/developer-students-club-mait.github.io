@@ -4,29 +4,46 @@
 html {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
+    
 }
 
  .main-heading{
     @media only screen and (min-width: 992px){
-        margin-top: 217px;
+        //margin-top: 217px;
     }
    
  }
+ .header-content{
+    height: 100vh; 
+    display: flex;
 
+    padding: 10%;
+     justify-content: center;
+     flex-direction: column;
+     //align-items: center;
+     @media only screen and (min-width: 992px){
+        padding: 0%;
+    }
+
+    }
 .heading{
     @media only screen and (min-width: 992px){
-        font: normal normal 600 62px/93px Poppins;
+        font: normal normal 600 52px/93px Poppins;
     }
     @media only screen and (max-width: 992px){
-        font: normal normal 600 56px/93px Poppins;
+        font: normal normal 600 1.6rem/3rem Poppins;
     }
+    margin: 0;
     color: var(--unnamed-color-346df1);
     letter-spacing: 0px;
     color: #346DF1;
 }
 .head-image{
     @media only screen and (min-width: 992px){
-        margin-top: 180px;
+       // margin-top: 180px;
+       min-height: 100vh;
+       display: flex;
+       align-items: center;
     }
     
     width: 100%;
@@ -37,7 +54,7 @@ html {
 .college-name{
     @media only screen and (min-width: 992px){
         margin-left: 10%;
-        font: normal normal normal 26px/39px Poppins;
+        font: normal normal normal 20px/39px Poppins;
     }
     @media only screen and (max-width: 992px){
         font: normal normal normal 18px/39px Poppins;
@@ -48,57 +65,58 @@ html {
 }
 .para-first{
     @media only screen and (min-width: 992px){
-        font: normal normal normal 26px/39px Poppins;
+        font: normal normal normal 20px/39px Poppins;
     }
     @media only screen and (max-width: 992px){
         font: normal normal normal 18px/39px Poppins;
         line-height: 1.5;
     }
+    margin-top: 2rem;
     letter-spacing: 0px;
     opacity: 1;
     color: #1B1B1B;
 }
 
 .button{
-    @media only screen and (min-width: 992px){
-        margin-top: -8%;
-    }
-    width: 225px;
-    height: 65px;
+    // @media only screen and (min-width: 992px){
+    //     margin-top: -8%;
+    // }
+    width: fit-content;
     background: #273B59 0% 0% no-repeat padding-box;
-    border-radius: 16px;
+    border-radius: 10px;
     opacity: 1;
-    margin-left: 8%;
+    box-shadow: 0rem 0.6rem 2rem rgba(#9FC4FD,1);
+    //margin-left: 8%;
 }
 .button-text{
-    margin-top: 64px;
-    margin-left: 72px;
-    width: 72px;
-    height: 49px;
     text-align: left;
-    font: normal normal 600 35px/53px Poppins;
+    padding: 1rem;
+    font: normal normal 400 1.4rem/53px Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
 }
 .blue-box{
-    @media only screen and (min-width: 992px){
-        margin-left: -3%;
-    }
+    
     width: 100%;
-    height: 325px;
+  //  height: 325px;
+  padding: 2rem 10%;
+
     background: var(--unnamed-color-346df1) 0% 0% no-repeat padding-box;
     background: #346DF1 0% 0% no-repeat padding-box;
-    border-radius: 24px;
+    border-radius: 0 24px 24px 0;
     opacity: 1;
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .box-head{
     @media only screen and (min-width: 992px){
-        font: normal normal 600 62px/93px Poppins;
+        font: normal normal 500 2.4rem Poppins;
     }
     @media only screen and (max-width: 992px){
-        font: normal normal 600 52px/93px Poppins;
+        font: normal normal 500 2.4rem Poppins;
         line-height: 1;
         padding-top: 20px;
     }
@@ -107,16 +125,15 @@ html {
 }
 .box-content{
     @media only screen and (min-width: 992px){
-        margin-left: 110px;
-        font: normal normal normal 26px/39px Poppins;
+        // margin-left: 110px;
+        font: normal normal normal 1.4rem/39px Poppins;
         line-height: 1.5;
     }
     @media only screen and (max-width: 992px){
-        margin-left: 10%;
-        font: normal normal normal 18px/39px Poppins;
+        // margin-left: 10%;
+        font: normal normal normal 1.2rem/39px Poppins;
         line-height: 1.5;
     }
-    width: 80%;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -124,7 +141,7 @@ html {
 .g-arrow{
     @media only screen and (min-width: 992px){
         margin-top: 20%;
-        width: 70%;
+        width: 60%;
     }
     @media only screen and (max-width: 992px){
         display: none;
@@ -134,7 +151,7 @@ html {
 .b-arrow{
     @media only screen and (min-width: 992px){
         margin-bottom: 20%;
-        width: 70%;
+        width: 60%;
     }
     @media only screen and (max-width: 992px){
         display: none;
@@ -142,6 +159,8 @@ html {
     
 }
 .mobile{
+    width: 100%;
+
     @media only screen and (min-width: 992px){
         display: none;
     }
@@ -152,15 +171,18 @@ html {
     }
 }
 .green-box{
-    @media only screen and (min-width: 992px){
-        margin-left: 3%;
-    }
+   
     width: 100%;
-    height: 325px;
+    padding: 2rem 10%;
+
     background: var(--unnamed-color-069e57) 0% 0% no-repeat padding-box;
     background: #069E57 0% 0% no-repeat padding-box;
-    border-radius: 24px;
+    border-radius: 24px 0 0 24px;
     opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 :root {
     --unnamed-color-346df1: #346DF1;
@@ -170,33 +192,34 @@ html {
     }
 .grey-box{
     @media only screen and (min-width: 992px){
-        margin-left: 10%;
+       
         width: 80%;
     }
     @media only screen and (max-width: 992px){
         width: 100%;
     }
-    margin-top: 0%;
+    margin: 4rem auto;
+
+    display: flex;
+    justify-content: center;
     background: #CCCCCC 0% 0% no-repeat padding-box;
     border-radius: 24px;
     width: 100%;
 }    
 .grey-box-content{
     @media only screen and (min-width: 992px){
-        margin-left: 6%;
-        font: normal normal normal 26px/39px Poppins;
-        width: 80%;
+     
+        font: normal normal normal 1.2rem Poppins;
+        width: 100%;
         padding-bottom: 35px;
         padding-left: 40px;
         padding-right: 50px;
-        h1{
-            margin-bottom: -0.3%;
-        }
+      
     }
     @media only screen and (max-width: 992px){
         font: normal normal normal 18px/39px Poppins;
         line-height: 1.5;
-        width: 80%;
+        width: 100%;
         padding-bottom: 15px;
         padding-left: 30px;
     }
@@ -206,23 +229,30 @@ html {
     
 }
 .project-box{
-    @media only screen and (min-width: 992px){
-        margin-left: 10%;
-        width: 80%;
-    }
-    @media only screen and (max-width: 992px){
-        width: 100%;
-    }
+    // @media only screen and (min-width: 992px){
+     
+    // }
+    // @media only screen and (max-width: 992px){
+    //     width: 100%;
+    // }
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 10px 12px #5ae0f5ec;
+    box-shadow: 0px 10px 1rem rgba(#000,0.2);
     opacity: 1;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects{
+    padding: 0 10% 5rem 10%;
+ 
 }
 .project-head{
     @media only screen and (min-width: 992px){
-        font: normal normal 600 52px/78px Poppins;
+        font: normal normal 500 2rem Poppins;
     }
     @media only screen and (max-width: 992px){
-        font: normal normal 600 48px/78px Poppins;
+        font: normal normal 500 2rem Poppins;
     }
     padding-top: 4%;
     color: var(--unnamed-color-346df1);
@@ -232,30 +262,55 @@ html {
     opacity: 1;
 }
 .project-button{
-    width: 60%;
-    height: 79px;
+    // width: 60%;
+    // height: 79px;
+    padding: 1rem 1rem;
     background: #069E57 0% 0% no-repeat padding-box;
     border: #069E57;
     border-radius: 10px;
     opacity: 1;
-    font: normal normal 600 33px/50px Poppins;
+    font: normal normal 500 1.8rem Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
-    margin: 10%;
-    margin-left: 20%;
+ 
+}
+.tech-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    div{
+        flex:1;
+    }
+    @media only screen and (max-width: 992px){
+        width: 100vw;
+        padding: 1rem;
+    }
+    //align-items: center;
+}
+.tech-secondary-header{
+
+}
+.project-content{
+    font-size: 1.2rem;
+    margin: 0 0 2rem 0;
 }
 .tech-blocks{
     @media only screen and (min-width: 992px){
-        font: normal normal  28px/78px Poppins;
-        width: 40%;
+        font: normal normal  1.5rem/78px Poppins;
+        min-width: 20rem;
+        width: fit-content;
         line-height: 1;
-        padding: 2%;
+        padding: 0.8rem 4rem ;
+       
     }
     @media only screen and (max-width: 992px){
         font: normal normal  18px/78px Poppins;
+        min-width: 18rem;
         line-height: 1;
-        width: 100%;
-        padding: 7%;
+        width: 60%;
+        padding: 0.8rem 3rem ;
+        
         
     }
     font: normal normal normal 28px/48px Poppins;
