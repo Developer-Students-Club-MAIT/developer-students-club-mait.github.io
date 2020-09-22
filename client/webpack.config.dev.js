@@ -40,6 +40,10 @@ module.exports = {
               name: '[path][name].[ext]'
             }
         }
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
       }
     ]
   },
