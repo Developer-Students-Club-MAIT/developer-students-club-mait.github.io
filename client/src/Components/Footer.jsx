@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                     </center>
                 </Grid>
-                <Grid item sm = {12} md = {8} style = {{backgroundColor: "#CCCCCC"}}>
+                <Grid item sm = {12} md = {8} style = {{backgroundColor: "#CCCCCC",flex:1}}>
                 <div className="mapouter">
         <div className="gmap_canvas" style = {{width: "100%"}}>
         

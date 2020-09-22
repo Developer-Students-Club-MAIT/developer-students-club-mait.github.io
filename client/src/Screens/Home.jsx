@@ -208,7 +208,7 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-        <Grid container spacing={3} className="projects">
+        <Grid container className="projects">
           <Grid item sm={12} md={6}>
             <div class="project-box">
               <h1 className="project-head">
