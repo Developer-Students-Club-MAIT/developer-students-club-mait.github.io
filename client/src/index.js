@@ -1,28 +1,23 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import './assets/css/index.scss'
-import Home from './Screens/Home.jsx'
-import { Route, Switch } from 'react-router-dom';
-import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./assets/css/index.scss";
+import Home from "./Screens/Home.jsx";
+import Teams from "./Screens/Teams.jsx";
+
 
 class App extends Component {
-    render() {
-        const App = () => (
-            <div>
-              <Switch>
-                <Route exact path='/' component={Home}/>
-                
-              </Switch>
-            </div>
-        )      
-        return (
-            <Switch>
-              <App/>
-            </Switch>
-        );
-    }
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/teams" exact component={Teams} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
 }
-ReactDOM.render((<BrowserRouter>
-    <App/>
-</BrowserRouter>), document.getElementById('root'))
+
+ReactDOM.render(<App />, document.getElementById("root"));

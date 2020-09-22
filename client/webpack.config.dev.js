@@ -4,6 +4,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
+  devServer: {
+    host: '192.168.0.105',
+    port: 8080,
+    disableHostCheck: true,
+    historyApiFallback: true,
+    contentBase: './',
+    hot: true,
+  },
   entry: {
     main: resolve(__dirname, 'src', 'index.js')
   },
