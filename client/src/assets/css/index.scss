@@ -14,7 +14,7 @@ html {
    
  }
  .header-content{
-    height: 100vh; 
+    min-height: 100vh; 
     display: flex;
 
     padding: 10%;
@@ -24,7 +24,9 @@ html {
      @media only screen and (min-width: 992px){
         padding: 0%;
     }
-
+    @media only screen and (max-width: 992px){
+        min-height: 70vh;
+    }
     }
 .heading{
     @media only screen and (min-width: 992px){
@@ -239,6 +241,7 @@ html {
 }
 .project-header{
     display: flex;
+    align-items: center;
     margin-bottom: 1rem;
 }
 .project-box{
@@ -262,13 +265,22 @@ html {
 .projects{
     padding: 0 10% 5rem 10%;
  
+    @media only screen and (max-width: 992px){
+        padding: 0 5% 5rem 5%;
+
+        a{
+            @media only screen and (max-width: 992px){
+                text-align: center;
+            }
+        }
+    }
 }
 .project-head{
     @media only screen and (min-width: 992px){
         font: normal normal 500 2rem Poppins;
     }
     @media only screen and (max-width: 992px){
-        font: normal normal 500 2rem Poppins;
+        font: normal normal 500 1.4rem Poppins;
     }
     padding-top: 4%;
     color: var(--unnamed-color-346df1);
@@ -289,7 +301,8 @@ html {
     font: normal normal 500 1.4rem Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
- 
+    
+
 }
 .tech-box{
     display: flex;

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import Logo from "../assets/dsc.png";
 import SVG from "react-inlinesvg";
 import laptop from "../assets/project1.svg";
 //import laptopcat from '../assets/project2.svg';
@@ -47,7 +48,7 @@ function Home() {
   const renderProjects = () => {
     return projects.map((project) => {
       return (
-        <Grid item sm={12} md={6}>
+        <Grid  item sm={12} md={6}>
             <div class="project-box">
 
               <div className="project-header">
@@ -87,6 +88,7 @@ function Home() {
           <Grid item sm={12} md={6} lg={6}>
             <div className="header-content">
               <div className="main-heading">
+                <img src={Logo} height={"40rem"} alt="logo" />
                 <h1 className="heading">
                   <span style={green}>D</span>eveloper{" "}
                   <span style={yellow}>S</span>tudents{" "}
@@ -136,7 +138,7 @@ function Home() {
           </Grid>
         
         </Grid>
-        <Grid container spacing={3}>
+        <Grid container spacing={0}>
           <Grid item md={6}>
             <div className="blue-box" data-aos="fade-right">
               <h1 className="box-head">
@@ -272,7 +274,7 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-        <Grid container className="projects">
+        <Grid spacing={3} container className="projects">
           {renderProjects()}
         </Grid>
 {/* 
