@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
@@ -11,8 +11,11 @@ import garrow from "../assets/arrow1.JPG";
 import barrow from "../assets/arrow2.JPG";
 import Footer from "../Components/Footer.jsx";
 import hero from "../assets/hero-image.JPG";
+import Axios from "axios";
+import AOS from 'aos';
 
 function Home() {
+  const [projects,setProjects] = useState([])
   const blue = {
     color: "#346DF1",
   };
@@ -25,6 +28,57 @@ function Home() {
   const red = {
     color: "#EB4132",
   };
+  useEffect(() => {
+    AOS.init();
+  })
+  useEffect(() => {
+    fetchProjects();
+  },[])
+  const fetchProjects = () => {
+    Axios.get('https://api.github.com/orgs/Developer-Students-Club-MAIT/repos',{
+      headers:{
+        Accept:"application/vnd.github.inertia-preview+json"
+      }
+    }).then((res) => {
+      setProjects(res.data.slice(0,2))
+    })
+  }
+
+  const renderProjects = () => {
+    return projects.map((project) => {
+      return (
+        <Grid item sm={12} md={6}>
+            <div class="project-box">
+
+              <div className="project-header">
+              <img className="project-owner" src={project.owner.avatar_url} alt="owner"/>
+              <h1 className="project-head">
+                {project.name}
+              </h1>
+              </div>
+              <p
+                style={{ color: "#464646" }}
+                className="project-content"
+              >
+                {project.description}
+              </p>
+              {/* <div style={{ width: "60%", marginLeft: "20%" }}>
+                <SVG src={laptop} />
+              </div> */}
+              <a href={project.html_url} target="_blank">
+              <button className="project-button">
+                Check Now{" "}
+                <i
+                  class="fas fa-external-link-alt"
+                  style={{ fontSize: "20px" }}
+                ></i>
+              </button>
+              </a>
+            </div>
+          </Grid>
+      )
+    })
+  }
   return (
     <div>
       <Box className="mt-9">
@@ -84,7 +138,7 @@ function Home() {
         </Grid>
         <Grid container spacing={3}>
           <Grid item md={6}>
-            <div className="blue-box">
+            <div className="blue-box" data-aos="fade-right">
               <h1 className="box-head">
                 <center>Connect</center>
               </h1>
@@ -108,7 +162,7 @@ function Home() {
             ></img>
           </Grid>
           <Grid item md={6}>
-            <div className="green-box">
+            <div className="green-box" data-aos="fade-left">
               <h1 className="box-head">
                 <center>Learn</center>
               </h1>
@@ -167,6 +221,7 @@ function Home() {
                   borderColor: "#346DF1",
                   color: "#346DF1",
                 }}
+                data-aos="fade-up"
               >
                 Machine Learning
               </div>
@@ -177,6 +232,8 @@ function Home() {
                   borderColor: "#EB4132",
                   color: "#EB4132",
                 }}
+                data-aos="fade-up"
+
               >
                 Web Development
               </div>
@@ -186,6 +243,8 @@ function Home() {
                   borderColor: "#FBBD00",
                   color: "#FBBD00",
                 }}
+                data-aos="fade-up"
+
               >
                 App Development
               </div>
@@ -196,12 +255,17 @@ function Home() {
                   borderColor: "#069E57",
                   color: "#069E57",
                 }}
+                data-aos="fade-up"
+
               >
+                
                 UI/UX Design
               </div>
               <div
                 className="tech-blocks"
                 style={{ marginBottom: "5%" }}
+                data-aos="fade-up"
+
               >
                 Action on Google
               </div>
@@ -209,51 +273,7 @@ function Home() {
           </Grid>
         </Grid>
         <Grid container className="projects">
-          <Grid item sm={12} md={6}>
-            <div class="project-box">
-              <h1 className="project-head">
-                <center>Lorem ipsum Project</center>
-              </h1>
-              <p
-                style={{ color: "#464646"}}
-                className="project-content"
-              >
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et
-              </p>
-              {/* <div style={{ width: "60%", marginLeft: "20%" }}>
-                <SVG src={"laptopcat"} />
-              </div> */}
-              <button className="project-button">Check Now</button>
-            </div>
-          </Grid>
-          
-          <Grid item sm={12} md={6}>
-            <div class="project-box">
-              <h1 className="project-head">
-                <center>Lorem ipsum Project</center>
-              </h1>
-              <p
-                style={{ color: "#464646" }}
-                className="project-content"
-              >
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et
-              </p>
-              {/* <div style={{ width: "60%", marginLeft: "20%" }}>
-                <SVG src={laptop} />
-              </div> */}
-              <button className="project-button">
-                Check Now{" "}
-                <i
-                  class="fas fa-external-link-alt"
-                  style={{ fontSize: "20px" }}
-                ></i>
-              </button>
-            </div>
-          </Grid>
+          {renderProjects()}
         </Grid>
 {/* 
         <Grid container spacing={3}>

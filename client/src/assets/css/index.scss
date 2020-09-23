@@ -85,9 +85,11 @@ html {
     background: #273B59 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
+    border:none;
     box-shadow: 0rem 0.6rem 2rem rgba(#9FC4FD,1);
     //margin-left: 8%;
 }
+
 .button-text{
     text-align: left;
     padding: 1rem;
@@ -228,6 +230,17 @@ html {
     opacity: 1;
     
 }
+.project-owner{
+    height: 5rem;
+    width: 5rem;
+    box-shadow: 1px 2px 0.5rem rgba(#000,0.2);
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+.project-header{
+    display: flex;
+    margin-bottom: 1rem;
+}
 .project-box{
     // @media only screen and (min-width: 992px){
      
@@ -236,12 +249,15 @@ html {
     //     width: 100%;
     // }
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 10px 1rem rgba(#000,0.2);
+    box-shadow: 0px 5px 1rem rgba(#9FE8F4,0.8);
     opacity: 1;
     padding: 1rem 2rem;
+    margin: 1rem;    
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 0.5rem;
 }
 .projects{
     padding: 0 10% 5rem 10%;
@@ -264,12 +280,13 @@ html {
 .project-button{
     // width: 60%;
     // height: 79px;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
+    width: 15rem;
     background: #069E57 0% 0% no-repeat padding-box;
     border: #069E57;
     border-radius: 10px;
     opacity: 1;
-    font: normal normal 500 1.8rem Poppins;
+    font: normal normal 500 1.4rem Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
  
@@ -292,8 +309,10 @@ html {
 
 }
 .project-content{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: #464646;
     margin: 0 0 2rem 0;
+    flex:1;
 }
 .tech-blocks{
     @media only screen and (min-width: 992px){

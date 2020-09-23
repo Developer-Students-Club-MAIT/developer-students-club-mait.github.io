@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/layout.scss";
+import Footer from "./Footer.jsx";
 function Nav(props) {
   return (
     <div className="layout">
@@ -31,6 +32,7 @@ function Nav(props) {
         </div>
       </div>
       <div className="layout__content">{props.children}</div>
+
     </div>
   );
 }

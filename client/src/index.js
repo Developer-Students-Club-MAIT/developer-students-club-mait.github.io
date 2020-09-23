@@ -6,9 +6,11 @@ import "./assets/css/index.scss";
 import Nav from "./Components/Nav.jsx";
 import Home from "./Screens/Home.jsx";
 import Teams from "./Screens/Teams.jsx";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class App extends Component {
+ 
   render() {
     return (
       <BrowserRouter>
