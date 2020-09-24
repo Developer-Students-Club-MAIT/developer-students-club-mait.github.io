@@ -19,7 +19,7 @@ import ankit from '../assets/profilePictures/ankit.jpg'
 import prateek from '../assets/profilePictures/prateek.jpg'
 import indrakant from '../assets/profilePictures/indrakant.jpg'
 import harsh from '../assets/profilePictures/harsh.jpg'
-import ishita from '../assets/profilePictures/ishita.jpg'
+import ishita from '../assets/profilePictures/ishita.JPG'
 
 function Teams(props) {
     return (
