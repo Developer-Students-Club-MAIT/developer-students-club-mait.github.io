@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   mode: 'development',
   devServer: {
-    host: '192.168.0.105',
     port: 8080,
     disableHostCheck: true,
     historyApiFallback: true,
@@ -32,7 +31,7 @@ module.exports = {
         use: [ 'style-loader', 'css-loader', 'sass-loader' ],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpg|jpeg|svg|gif)$/i,
         use: {
             loader: 'url-loader',
             options: { 

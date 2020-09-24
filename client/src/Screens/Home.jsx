@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import SVG from 'react-inlinesvg';
 import laptop from '../assets/project1.svg';
-import laptopcat from '../assets/project2.svg';
+import laptopcat from '../assets/Project2.svg';
 import bot from '../assets/bot.JPG'
 import garrow from '../assets/arrow1.JPG'
 import barrow from '../assets/arrow2.JPG'
