@@ -15,6 +15,9 @@ import hero from "../assets/hero-image.JPG";
 import Axios from "axios";
 import AOS from 'aos';
 
+//Screens
+import Blogs from '../Screens/Blogs.jsx'
+
 function Home() {
   const [projects,setProjects] = useState([])
   const blue = {
@@ -299,6 +302,7 @@ function Home() {
           </Grid>
         </Grid>
          */}
+         <Blogs />
         <container>
           <Footer />
         </container>

@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/css/layout.scss";
+
 import Footer from "./Footer.jsx";
+
 function Nav(props) {
   return (
     <div className="layout">
