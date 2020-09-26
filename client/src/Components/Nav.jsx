@@ -21,7 +21,7 @@ function Nav(props) {
           </Link>
         </div>
         <div className="layout__nav">
-          <Link to="/">
+          <Link to="/blogs">
             <div>#</div>
             <div>Blogs</div>
           </Link>

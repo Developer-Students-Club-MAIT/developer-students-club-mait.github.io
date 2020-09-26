@@ -374,3 +374,17 @@ html {
    height: 35px;
    margin: 1%;
 }
+
+.robo-animation{
+    height:40rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;;
+    text-align: center;
+    margin: 0 auto;
+    @media only screen and (max-width: 992px){
+        height:20rem;
+        width: 100vw;
+
+    }
+}

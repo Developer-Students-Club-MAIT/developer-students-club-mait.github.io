@@ -20,6 +20,10 @@
   "homepage": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate#readme",
   "dependencies": {
     "react": "^16.13.1",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.7"
   }
 }

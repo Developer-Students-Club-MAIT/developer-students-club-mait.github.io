@@ -14,7 +14,7 @@ import Footer from "../Components/Footer.jsx";
 import hero from "../assets/hero-image.JPG";
 import Axios from "axios";
 import AOS from 'aos';
-
+import RoboAnimations from "../Components/RoboAnimation.jsx";
 //Screens
 import Blogs from '../Screens/Blogs.jsx'
 
@@ -205,7 +205,8 @@ function Home() {
             </p>
           </div>
           <Grid item sm={12} md={6}>
-            <img src={bot} style={{ width: "100%", height: "100%" }}></img>
+            {/* <img src={bot} style={{ width: "100%", height: "100%" }}></img> */}
+            <RoboAnimations/>
           </Grid>
           <Grid item sm={12} md={6}>
             <div className="tech-box">
@@ -302,7 +303,6 @@ function Home() {
           </Grid>
         </Grid>
          */}
-         <Blogs />
         <container>
           <Footer />
         </container>
