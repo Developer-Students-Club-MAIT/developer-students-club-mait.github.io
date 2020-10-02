@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   mode: 'development',
   devServer: {
-    host: '192.168.0.105',
+    host: '192.168.43.125',
     port: 8080,
     disableHostCheck: true,
     historyApiFallback: true,
@@ -23,16 +23,31 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)/,
+        test: /\.json$/,
+        use: {
+          loader: 'json-loader',
+          options: { 
+            name: '[path][name].[ext]'
+          }
+        }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: { loader: 'babel-loader' }
+      },
+
+      {
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: { loader: 'babel-loader' }
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(s[ac]ss|css)$/i,
         use: [ 'style-loader', 'css-loader', 'sass-loader' ],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpg|jpeg|svg|gif)$/i,
         use: {
             loader: 'url-loader',
             options: { 

@@ -13,7 +13,7 @@ const Footer = () => {
     return(
         <div>
             
-            <Grid container spacing = {3} style = {{marginBottom: "-2%", marginTop: "10%"}}>
+            <Grid container spacing = {3} style = {{marginBottom: "-2%"}}>
                 <Grid item sm = {12} md = {4} style = {{paddingTop: "5%"}}>
                     <center>
                     <div>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                     </center>
                 </Grid>
-                <Grid item sm = {12} md = {8} style = {{backgroundColor: "#CCCCCC"}}>
+                <Grid item sm = {12} md = {8} style = {{backgroundColor: "#CCCCCC",flex:1}}>
                 <div className="mapouter">
         <div className="gmap_canvas" style = {{width: "100%"}}>
         

@@ -107,3 +107,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Webpack Dev Env
+client/webpack.config.dev.js
