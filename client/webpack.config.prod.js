@@ -14,25 +14,44 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-              test: /\.(js|jsx)/,
-              exclude: /node_modules/,
-              use: { loader: 'babel-loader' }
-            },
-            {
-              test: /\.s[ac]ss$/i,
-              use: [ 'style-loader', 'css-loader', 'sass-loader' ],
-            },
-            {
-              test: /\.(png|jpg|gif)$/i,
-              use: {
-                  loader: 'url-loader',
-                  options: { 
-                    limit: 15360,
-                    name: '[path][name].[ext]'
-                  }
+          {
+            test: /\.json$/,
+            use: {
+              loader: 'json-loader',
+              options: { 
+                name: '[path][name].[ext]'
               }
             }
+          },
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: { loader: 'babel-loader' }
+          },
+    
+          {
+            test: /\.jsx$/,
+            exclude: /node_modules/,
+            use: { loader: 'babel-loader' }
+          },
+          {
+            test: /\.(s[ac]ss|css)$/i,
+            use: [ 'style-loader', 'css-loader', 'sass-loader' ],
+          },
+          {
+            test: /\.(png|jpg|jpeg|svg|gif)$/i,
+            use: {
+                loader: 'url-loader',
+                options: { 
+                  limit: 15360,
+                  name: '[path][name].[ext]'
+                }
+            }
+          },
+          {
+            test: /\.svg$/,
+            loader: 'svg-inline-loader'
+          }
         ]
     },
     plugins: [
