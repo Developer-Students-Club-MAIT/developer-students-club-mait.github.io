@@ -8,6 +8,7 @@ import Home from "./Screens/Home.jsx";
 import Teams from "./Screens/Teams.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Blogs from "./Screens/Blogs.jsx";
 
 class App extends Component {
  
@@ -18,6 +19,8 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/teams" exact component={Teams} />
+          <Route path="/blogs" exact component={Blogs} />
+
         </Switch>
         </Nav>
       </BrowserRouter>
