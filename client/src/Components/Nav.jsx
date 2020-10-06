@@ -37,7 +37,7 @@ function Nav(props) {
           
             <div><img className="layout__nav__icon" src={TeamsIcon} alt="icon" /></div>
 
-            <div>Teams</div>
+            <div>Team</div>
           </Link>
         </div>
         
