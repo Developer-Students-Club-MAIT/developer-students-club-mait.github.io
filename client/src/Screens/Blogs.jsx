@@ -5,14 +5,17 @@ function Blogs(props) {
     const [PostData, setPostData] = useState(null);
     const [Loading, setLoading] = useState(false);
 
-    useEffect(async () => {
-        await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/dscmait`)
+    useEffect(() => {
+        async function FetchBlogsAPI() {
+            await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/dscmait`)
             .then(doc => doc.json())
             .then(posts => {
                 setPostData(posts.items)
                 setLoading(true)
             })
             .catch(err => console.log(err))
+        }
+        FetchBlogsAPI()
     }, [])
 
     return (
@@ -36,7 +39,7 @@ function Blogs(props) {
                                         <img src={BackgroundImg} alt="" style={{ height: '100%', width: '100%' }} />
                                         <div style={{ padding: 15 }}>
                                             <Typography variant='h3' style={{ fontSize: 40, color: '#346DF1', fontWeight: 600, fontFamily: 'Poppins' }}>{post.title}</Typography>
-                                            <Typography variant='p' style={{ fontFamily: 'Poppins', fontSize: 22, color: '#464646' }}>
+                                            <Typography style={{ fontFamily: 'Poppins', fontSize: 22, color: '#464646' }}>
                                                 <span dangerouslySetInnerHTML={{ __html: Description }}></span>
                                             </Typography>
                                             <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 20 }}>
@@ -50,7 +53,7 @@ function Blogs(props) {
                                                         <button className="project-button">
                                                             Read Now{" "}
                                                             <i
-                                                                class="fas fa-external-link-alt"
+                                                                className="fas fa-external-link-alt"
                                                                 style={{ fontSize: "20px" }}
                                                             ></i>
                                                         </button>

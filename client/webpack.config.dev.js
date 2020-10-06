@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   mode: 'development',
   devServer: {
-    host: '192.168.43.125',
     port: 8080,
     disableHostCheck: true,
     historyApiFallback: true,
