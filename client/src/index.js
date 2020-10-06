@@ -17,7 +17,7 @@ const Blogs = lazy(() => import("./Screens/Blogs.jsx"));
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter  basename={process.env.PUBLIC_URL}>
         <Nav>
           <Suspense fallback={<Loader/>}>
             <Switch>
