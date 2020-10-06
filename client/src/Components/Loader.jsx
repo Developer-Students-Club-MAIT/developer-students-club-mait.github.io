@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../assets/animations/robo_animation.js";
+import animationData from "../assets/animations/loader.js";
 
-const RoboAnimations = () => {
+const Loader = () => {
 
   const defaultOptions = {
     loop: true,
@@ -14,14 +14,16 @@ const RoboAnimations = () => {
   };
 
   return (
-    <div className="robo-animation">
+      <div className="loader__container">
+    <div className="loader">
       <Lottie
         options={defaultOptions}
-        width={"100%"}
+        // width={300}
         // width={500}
       />
+    </div>
     </div>
   );
 };
 
-export default RoboAnimations;
+export default Loader;

@@ -8,6 +8,7 @@ import SVG from "react-inlinesvg";
 import laptop from "../assets/project1.svg";
 //import laptopcat from '../assets/project2.svg';
 import bot from "../assets/bot.JPG";
+import RightArrow from "../assets/right.png";
 import garrow from "../assets/arrow1.JPG";
 import barrow from "../assets/arrow2.JPG";
 import Footer from "../Components/Footer.jsx";
@@ -154,7 +155,7 @@ function Home() {
               </p>
             </div>
           </Grid>
-          <Grid item sm={0} md={6}>
+          <Grid item md={6}>
             <img src={garrow} className="g-arrow"></img>
           </Grid>
         </Grid>
@@ -278,31 +279,13 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-        <Grid spacing={3} container className="projects">
+        <Grid spacing={3} container id="projects" className="projects">
           {renderProjects()}
-        </Grid>
-{/* 
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <div className="grey-box">
-              <p className="grey-box-content">
-                <h1 style={{ color: "#000000" }} className="box-head">
-                  <center>Community Guidelines</center>
-                </h1>
-                When you join DSC MAIT, you’re joining a community. And like any
-                growing community, a few ground rules about expected behavior
-                are good for everyone. These guidelines cover both online (e.g.
-                mailing lists, social channels) and offline (e.g. in-person
-                meetups) behavior.<br></br>
-                <br></br>
-                Violations of code of conduct can result in members being
-                removed from DSC MAIT. Use your best judgement, and if you’d
-                like more clarity or have questions feel free to reach out.
-              </p>
-            </div>
+          <Grid item container sm={12}>
+            <a target="_blank" href="https://github.com/Developer-Students-Club-MAIT" className="projects__more">View More Projects <img className="projects__arrow" src={RightArrow} alt="see more"/></a>
           </Grid>
         </Grid>
-         */}
+
         <container>
           <Footer />
         </container>
