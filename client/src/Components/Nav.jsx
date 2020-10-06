@@ -20,10 +20,10 @@ function Nav(props) {
           </Link>
         </div>
         <div className="layout__nav">
-          <a href="/#projects">
+          <Link to="/projects">
           <div><img className="layout__nav__icon" src={ProjectsIcon} alt="icon" /></div>
             <div>Projects</div>
-          </a>
+          </Link>
         </div>
         <div className="layout__nav">
           <Link to="/blogs">
