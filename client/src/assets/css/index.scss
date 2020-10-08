@@ -263,8 +263,18 @@ html {
     border-radius: 0.5rem;
 }
 .projects{
-    padding: 0 10% 5rem 10%;
- 
+    padding: 5% 10% 5rem 10%;
+    &__arrow{
+        width: 3rem;
+    }
+    &__more{
+        display: block;
+        color:#525252;
+        text-decoration: none;
+        width: 100%;
+        text-align: right;
+        padding: 2rem;
+    }
     @media only screen and (max-width: 992px){
         padding: 0 5% 5rem 5%;
 

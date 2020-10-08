@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withStyles, Grid, Typography, Divider } from "@material-ui/core";
+import Loader from '../Components/Loader.jsx';
 
 function Blogs(props) {
     const [PostData, setPostData] = useState(null);
@@ -7,24 +8,29 @@ function Blogs(props) {
 
     useEffect(() => {
         async function FetchBlogsAPI() {
+            setLoading(true)
+            
             await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/dscmait`)
             .then(doc => doc.json())
             .then(posts => {
                 setPostData(posts.items)
-                setLoading(true)
+                setLoading(false)
+
             })
             .catch(err => console.log(err))
         }
         FetchBlogsAPI()
     }, [])
-
+    if(Loading){
+        return <Loader/>
+    }
     return (
         <Grid container component='main'>
             <Grid item xs={12}>
                 <Typography variant='h2' align='center'>Our Blogs</Typography>
             </Grid>
             <Grid container component='div' justify='space-evenly'>
-                {Loading ?
+                {!Loading ?
                     (
                         PostData && PostData.map((post, index) => {
                             let BackgroundImg = document.createElement("div");
@@ -67,7 +73,7 @@ function Blogs(props) {
                         })
                     )
                     :
-                    'LOADING'
+                    <Loader/>
                 }
             </Grid>
         </Grid>
