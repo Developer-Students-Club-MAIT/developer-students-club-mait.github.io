@@ -85,3 +85,10 @@ h1, h2 {
     align-items: center;
     justify-content: space-around;
 }
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
