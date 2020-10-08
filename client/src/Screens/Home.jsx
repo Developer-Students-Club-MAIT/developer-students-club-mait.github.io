@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-<<<<<<< HEAD
 import SVG from 'react-inlinesvg';
 import laptop from '../assets/project1.svg';
 import laptopcat from '../assets/Project2.svg';
@@ -12,22 +11,6 @@ import garrow from '../assets/arrow1.JPG'
 import barrow from '../assets/arrow2.JPG'
 import Footer from '../Components/Footer.jsx'
 import hero from '../assets/hero-image.JPG'
-=======
-import Logo from "../assets/dsc.png";
-import SVG from "react-inlinesvg";
-import laptop from "../assets/project1.svg";
-//import laptopcat from '../assets/project2.svg';
-import bot from "../assets/bot.JPG";
-import garrow from "../assets/arrow1.JPG";
-import barrow from "../assets/arrow2.JPG";
-import Footer from "../Components/Footer.jsx";
-import hero from "../assets/hero-image.JPG";
-import Axios from "axios";
-import AOS from 'aos';
-import RoboAnimations from "../Components/RoboAnimation.jsx";
-//Screens
-import Blogs from '../Screens/Blogs.jsx'
->>>>>>> e8d57f1c69d64054f083436c80b6d445e24a9023
 
 function Home() {
   const [projects,setProjects] = useState([])
