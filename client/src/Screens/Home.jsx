@@ -3,17 +3,19 @@ import ReactDOM from "react-dom";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import SVG from 'react-inlinesvg';
-import laptop from '../assets/project1.svg';
-import laptopcat from '../assets/Project2.svg';
-import bot from '../assets/bot.JPG'
-import garrow from '../assets/arrow1.JPG'
-import barrow from '../assets/arrow2.JPG'
-import Footer from '../Components/Footer.jsx'
-import hero from '../assets/hero-image.JPG'
+import Logo from "../assets/dsc.png";
+import SVG from "react-inlinesvg";
+import garrow from "../assets/arrow1.JPG";
+import barrow from "../assets/arrow2.JPG";
+import Footer from "../Components/Footer.jsx";
+import hero from "../assets/hero-image.JPG";
+
+import AOS from 'aos';
+import RoboAnimations from "../Components/RoboAnimation.jsx";
+//Screens
+import Projects from "./Projects.jsx";
 
 function Home() {
-  const [projects,setProjects] = useState([])
   const blue = {
     color: "#346DF1",
   };
@@ -29,58 +31,10 @@ function Home() {
   useEffect(() => {
     AOS.init();
   })
-  useEffect(() => {
-    fetchProjects();
-  },[])
-  const fetchProjects = () => {
-    Axios.get('https://api.github.com/orgs/Developer-Students-Club-MAIT/repos',{
-      headers:{
-        Accept:"application/vnd.github.inertia-preview+json"
-      }
-    }).then((res) => {
-      setProjects(res.data.slice(0,2))
-    })
-  }
-
-  const renderProjects = () => {
-    return projects.map((project) => {
-      return (
-        <Grid  item sm={12} md={6}>
-            <div class="project-box">
-
-              <div className="project-header">
-              <img className="project-owner" src={project.owner.avatar_url} alt="owner"/>
-              <h1 className="project-head">
-                {project.name}
-              </h1>
-              </div>
-              <p
-                style={{ color: "#464646" }}
-                className="project-content"
-              >
-                {project.description}
-              </p>
-              {/* <div style={{ width: "60%", marginLeft: "20%" }}>
-                <SVG src={laptop} />
-              </div> */}
-              <a href={project.html_url} target="_blank">
-              <button className="project-button">
-                Check Now{" "}
-                <i
-                  class="fas fa-external-link-alt"
-                  style={{ fontSize: "20px" }}
-                ></i>
-              </button>
-              </a>
-            </div>
-          </Grid>
-      )
-    })
-  }
   return (
     <div>
       <Box className="mt-9">
-        <Grid container spacing={3}>
+        <Grid container>
           <Grid item sm={12} md={1} lg={1}></Grid>
           <Grid item sm={12} md={6} lg={6}>
             <div className="header-content">
@@ -135,7 +89,7 @@ function Home() {
           </Grid>
         
         </Grid>
-        <Grid container spacing={0}>
+        <Grid container >
           <Grid item md={6}>
             <div className="blue-box" data-aos="fade-right">
               <h1 className="box-head">
@@ -148,11 +102,11 @@ function Home() {
               </p>
             </div>
           </Grid>
-          <Grid item sm={0} md={6}>
+          <Grid item md={6}>
             <img src={garrow} className="g-arrow"></img>
           </Grid>
         </Grid>
-        <Grid container spacing={3}>
+        <Grid container>
           <Grid item md={6}>
             <img
               src={barrow}
@@ -175,10 +129,8 @@ function Home() {
         </Grid>
         <Grid
           container
-          spacing={3}
           style={{
             backgroundColor: "#F9F9F9",
-            marginBottom: "5%",
             marginTop: "5%",
           }}
         >
@@ -272,31 +224,13 @@ function Home() {
             </div>
           </Grid>
         </Grid>
-        <Grid spacing={3} container className="projects">
+        {/* <Grid container id="projects" className="projects">
           {renderProjects()}
-        </Grid>
-{/* 
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <div className="grey-box">
-              <p className="grey-box-content">
-                <h1 style={{ color: "#000000" }} className="box-head">
-                  <center>Community Guidelines</center>
-                </h1>
-                When you join DSC MAIT, you’re joining a community. And like any
-                growing community, a few ground rules about expected behavior
-                are good for everyone. These guidelines cover both online (e.g.
-                mailing lists, social channels) and offline (e.g. in-person
-                meetups) behavior.<br></br>
-                <br></br>
-                Violations of code of conduct can result in members being
-                removed from DSC MAIT. Use your best judgement, and if you’d
-                like more clarity or have questions feel free to reach out.
-              </p>
-            </div>
+          <Grid item container sm={12}>
+            <a target="_blank" href="https://github.com/Developer-Students-Club-MAIT" className="projects__more">View More Projects <img className="projects__arrow" src={RightArrow} alt="see more"/></a>
           </Grid>
-        </Grid>
-         */}
+        </Grid> */}
+        <Projects count={2} />
         <container>
           <Footer />
         </container>

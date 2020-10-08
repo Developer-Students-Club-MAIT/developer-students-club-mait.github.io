@@ -41,6 +41,7 @@
     "aos": "^2.3.4",
     "axios": "^0.20.0",
     "font-awesome": "^4.7.0",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^2.1.8"
   }
