@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { withStyles, Grid, Typography, Divider } from "@material-ui/core";
 import Loader from '../Components/Loader.jsx';
+import '../assets/css/Blogs.scss'
 
 function Blogs(props) {
     const [PostData, setPostData] = useState(null);
     const [Loading, setLoading] = useState(false);
 
     useEffect(() => {
+        window.scroll(0,0)
         async function FetchBlogsAPI() {
             setLoading(true)
             
@@ -41,14 +43,14 @@ function Blogs(props) {
                             Description = Description.querySelector("p").innerHTML
                             return (
                                 <Grid item sm={12} md={6} key={index}>
-                                    <div style={{ width: '75%', margin: '30px auto', boxShadow: '0px 8px 1rem rgba(159, 232, 244, 0.8)' }}>
+                                    <div style={{ width: '75%', margin: '30px auto', boxShadow: '0px 8px 1rem rgba(159, 232, 244, 0.8)' }} className='blog-content-box'>
                                         <img src={BackgroundImg} alt="" style={{ height: '100%', width: '100%' }} />
                                         <div style={{ padding: 15 }}>
-                                            <Typography variant='h3' style={{ fontSize: 40, color: '#346DF1', fontWeight: 600, fontFamily: 'Poppins' }}>{post.title}</Typography>
-                                            <Typography style={{ fontFamily: 'Poppins', fontSize: 22, color: '#464646' }}>
+                                            <Typography variant='h3' style={{ fontSize: 40, color: '#346DF1', fontWeight: 600, fontFamily: 'Poppins' }} className='blog-title'>{post.title}</Typography>
+                                            <Typography style={{ fontFamily: 'Poppins', fontSize: 22, color: '#464646' }} className='blog-desc'>
                                                 <span dangerouslySetInnerHTML={{ __html: Description }}></span>
                                             </Typography>
-                                            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 20 }}>
+                                            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 20 }} className='blog-extra'>
                                                 <div>
                                                     <span style={{ font: 'italic normal 600 23px/28px Montserrat', color: '#FBBD00' }}>{post.author}</span>
                                                     <br />

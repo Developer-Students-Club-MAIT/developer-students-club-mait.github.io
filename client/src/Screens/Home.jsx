@@ -31,6 +31,9 @@ function Home() {
   useEffect(() => {
     AOS.init();
   })
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Box className="mt-9">

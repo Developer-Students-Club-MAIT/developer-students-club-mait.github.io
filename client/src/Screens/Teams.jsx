@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../assets/css/teams.scss";
 import logo from '../assets/profilePictures/sample.jpg';
 import deepika from '../assets/profilePictures/deepika.jpg'
@@ -22,6 +22,9 @@ import harsh from '../assets/profilePictures/harsh.jpg'
 import ishita from '../assets/profilePictures/ishita.jpg'
 
 function Teams(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className="html">
 

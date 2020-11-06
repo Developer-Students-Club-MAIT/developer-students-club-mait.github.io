@@ -8,6 +8,7 @@ function Projects({ count }) {
   const [projects, setProjects] = useState([]);
   const [loader,setLoader] = useState(false)
   useEffect(() => {
+    window.scroll(0,0)
     fetchProjects();
   }, []);
   const fetchProjects = () => {
@@ -38,7 +39,7 @@ function Projects({ count }) {
                 src={project.owner.avatar_url}
                 alt="owner"
               />
-              <h1 className="project-head">{project.name}</h1>
+              <h1 className="project-head">{project.name.replaceAll('-', ' ').replaceAll('_', ' ')}</h1>
             </div>
             <p style={{ color: "#464646" }} className="project-content">
               {project.description}
