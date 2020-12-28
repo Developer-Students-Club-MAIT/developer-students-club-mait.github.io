@@ -1,94 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-h1, h2 {
-    color: #346df1;
-    font-weight: 600;
+h1,
+h2 {
+  color: #346df1;
+  font-weight: 600;
 }
 
 #heading {
-    color: #346df1;
-    text-decoration: underline;
-    text-decoration-color: #fde08a;
-    padding: 20px;
+  color: #346df1;
+  text-decoration: underline;
+  text-decoration-color: #fde08a;
+  padding: 20px;
 }
 
 .lead {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
-    border: none;
+.team-card {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px 5px #9fe8f4;
+  border-radius: 2%;
+
+  transition: all 0.4s;
+
+  h4 {
+    color: #346df1;
+    font-weight: 500;
+  }
+
+  h6 {
+    color: #069e57;
+    font-weight: 500;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .socialIcons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 30px 5px #9FE8F4;
-    border-radius: 2%;
 
-    transition: all .4s;
-    
+    i {
+      color: #222;
+      transition: all 0.2s;
+      font-size: 18px;
 
-    h4 {
+      &:hover {
         color: #346df1;
-        font-weight: 500;
+      }
     }
+  }
 
-    h6 {
-        color: #069e57;
-        font-weight: 500;
-    }
-
-    
-
-    img {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-        text-align: center;
-    }
-
-    .socialIcons {
-        display: flex;
-        
-        i {
-            color: #222;
-            transition: all .2s;
-            font-size: 18px;
-
-            &:hover {
-                color: #346df1;
-            }
-        }
-
-        
-    }
-
-    &:hover {
-        box-shadow: none;
-        transform: scale(0.98);
-    }
+  &:hover {
+    box-shadow: none;
+    transform: scale(0.98);
+  }
 }
 
 .core-members {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @media (min-width: 768px) {
-    .container-fluid {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+  .container-fluid {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
