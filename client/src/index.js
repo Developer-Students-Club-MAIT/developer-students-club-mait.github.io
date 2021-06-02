@@ -11,6 +11,7 @@ import Loader from "./Components/Loader.jsx";
 import Projects from "./Screens/Projects.jsx";
 //import Blogs from "./Screens/Blogs.jsx";
 import Events from "./Screens/Events.jsx";
+import Conduct from "./Screens/Conduct.jsx";
 import "bootstrap/dist/css/bootstrap.css";
 
 const Home = lazy(() => import("./Screens/Home.jsx"));
@@ -29,6 +30,7 @@ class App extends Component {
               <Route path="/teams" exact component={Teams} />
               <Route path="/blogs" exact component={Blogs} />
               <Route path="/events" exact component={Events} />
+              <Route path="/conduct" exact component={Conduct} />
             </Switch>
           </Suspense>
         </Nav>
