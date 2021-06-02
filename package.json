@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-dep": "concurrently -n 'client,server' \"cd client && npm i\" \"cd ../server && npm i\"",
+    "install-dep": "concurrently -n 'client,server' \"cd client && npm i\" \"cd ./server && npm i\"",
     "dev": "cd server && npm run dev",
     "pro": "cd server && npm run pro"
   },
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate/issues"
   },
-  "homepage": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate#readme"
+  "homepage": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
 }
