@@ -20,5 +20,8 @@
   "homepage": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate#readme",
   "devDependencies": {
     "concurrently": "^6.2.0"
+  },
+  "dependencies": {
+    "dep": "^0.18.3"
   }
 }
