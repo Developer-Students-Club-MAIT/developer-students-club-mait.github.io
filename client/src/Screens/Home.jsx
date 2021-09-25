@@ -75,7 +75,7 @@ function Home() {
               </div>
               <button className="button">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdQe6EQchVGBLeoLVx1ZqiNILDgue2Li8GUycZJNNq05nBduw/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd8xde0Ru0QNx_gtvQVnZq1iTEkEu7I5n3SM6IVuthmRjR7QQ/viewform"
                 className="button-text"
               >
                 Register Now
