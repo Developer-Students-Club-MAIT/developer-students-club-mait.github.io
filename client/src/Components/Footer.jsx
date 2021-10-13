@@ -20,7 +20,7 @@ const Footer = () => {
                     <img src = {dsc} style = {{width: "80%"}}></img>
                     </div>
                     <div style = {{marginLeft : "10%"}}>
-                    <a href = "https://instagram.com/dsc_mait">
+                    <a href = "https://www.instagram.com/gdsc_mait/">
                         <img src = {insta} className = "footer-icon"></img>
                     </a>
                     <a href = "https://m.facebook.com/Developer-Student-Club-MAIT">

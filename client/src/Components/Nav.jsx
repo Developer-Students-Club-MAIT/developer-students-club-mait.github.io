@@ -19,7 +19,7 @@ function Nav(props) {
             <div>
               <img className="layout__nav__icon" src={HomeIcon} alt="icon" />
             </div>
-            <div>Home</div>
+            <div className="layout__nav__text">Home</div>
           </Link>
         </div>
         <div className="layout__nav">
@@ -31,7 +31,7 @@ function Nav(props) {
                 alt="icon"
               />
             </div>
-            <div>Projects</div>
+            <div className="layout__nav__text">Projects</div>
           </Link>
         </div>
         <div className="layout__nav">
@@ -40,7 +40,7 @@ function Nav(props) {
               <img className="layout__nav__icon" src={BlogIcon} alt="icon" />
             </div>
 
-            <div>Blogs</div>
+            <div className="layout__nav__text">Blogs</div>
           </Link>
         </div>
         <div className="layout__nav">
@@ -49,7 +49,7 @@ function Nav(props) {
               <img className="layout__nav__icon" src={TeamsIcon} alt="icon" />
             </div>
 
-            <div>Team</div>
+            <div className="layout__nav__text">Team</div>
           </Link>
         </div>
 
@@ -57,8 +57,8 @@ function Nav(props) {
           <Link to="/events">
             {/* <div><img className="layout__nav__icon" src={TeamsIcon} alt="icon" /></div> */}
             <MdEventNote size={25} />
-
-            <div>Events</div>
+    <br/>
+            <div className="layout__nav__text">Events</div>
           </Link>
         </div>
 
@@ -69,7 +69,7 @@ function Nav(props) {
               <img className="layout__nav__icon" src={BlogIcon} alt="icon" />
             </div>
 
-            <div>Conduct</div>
+            <div className="layout__nav__text">Conduct</div>
           </Link>
         </div>
       </div>

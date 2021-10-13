@@ -1,6 +1,14 @@
 html {
+  
   overflow-x: hidden;
 }
+
+.teams {
+  background-color: #9fe8f4;
+  display: flex;
+  justify-content: space-around;
+ }
+
 
 h1,
 h2 {
@@ -8,15 +16,28 @@ h2 {
   font-weight: 600;
 }
 
-.container-fluid {
-  margin-left: 33px;
+.row1 {
+  @media only screen and (min-width: 1300px) {
+    margin-left: 8vw;
+}
+
+  @media only screen and (max-width: 992px) and (min-width: 600px) {
+    margin-left: 2vw;
+}
+
+  @media only screen and (max-width: 600px) {
+    margin-left: -6vw;
+}
+}
+
+.container-fluid{
+  margin-top: 50px;
 }
 
 .team-2021,
 .team-2020 {
   display: inline-block;
   position: relative;
-  left: 1250px;
   margin: 10px 5px;
 }
 
@@ -31,7 +52,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 
 .big-heading {
@@ -39,6 +60,8 @@ h2 {
   text-decoration: underline;
   text-decoration-color: #fde08a;
   font-size: 2.5rem;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
   // margin: 0 auto;
 }
 
@@ -360,8 +383,8 @@ img {
   background-position: top;
 }
 
-.dhairya {
-  background: url("../profilePictures/profilePictures2021/dhairya.jpeg");
+.abhishek {
+  background: url("../profilePictures/profilePictures2021/abhishek.jpg");
   background-position: center left;
 }
 

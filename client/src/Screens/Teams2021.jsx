@@ -3,7 +3,7 @@ import "../assets/css/teams2021.scss";
 import { Link } from "react-router-dom";
 //profile pictures
 import aditya from "../assets/profilePictures/profilePictures2021/aditya.jpg";
-import shitiz from "../assets/profilePictures/profilePictures2021/shitiz.jpg";
+import shitiz from "../assets/profilePictures/profilePictures2021/Shizzz.png";
 import satyam from "../assets/profilePictures/profilePictures2021/satyam.jpg";
 import gauransh from "../assets/profilePictures/profilePictures2021/gauransh.jpg";
 import aakash from "../assets/profilePictures/profilePictures2021/akash.jpg";
@@ -13,11 +13,11 @@ import charvi from "../assets/profilePictures/profilePictures2021/charvi.jpg";
 import nidhi from "../assets/profilePictures/profilePictures2021/nidhi.jpeg";
 import tushar from "../assets/profilePictures/profilePictures2021/tushar.jpg";
 import aman from "../assets/profilePictures/profilePictures2021/aman.jpg";
-import prakhar from "../assets/profilePictures/profilePictures2021/prakhar.jpg";
+import prakhar from "../assets/profilePictures/profilePictures2021/Prakhar.jpg";
 import shraddha from "../assets/profilePictures/profilePictures2021/shraddha.jpg";
 import piyush from "../assets/profilePictures/profilePictures2021/piyush.png";
 import vidushi from "../assets/profilePictures/profilePictures2021/vidushi.jpeg";
-import dhairya from "../assets/profilePictures/profilePictures2021/dhairya.jpeg";
+import abhishek from "../assets/profilePictures/profilePictures2021/abhishek.jpg";
 
 //function to refresh page after loading once
 function refreshPage() {
@@ -36,21 +36,22 @@ function Teams2021(props) {
       {/* DSC Lead------------------------------------------------- */}
       <div className="teams">
         <div className="team-2021">
-          <Link to="/team/2021">
-            <div>2021</div>
+        <Link to="/team/2021">
+            <div>Team-2021</div>
           </Link>
         </div>
         <div className="team-2020">
-          <Link to="/team/2020" onClick={refreshPage}>
-            <div>2020</div>
+          <Link to="/team/2020">
+            <div>Team-2020</div>
           </Link>
         </div>
       </div>
 
       <div className="container-fluid">
-        <div className="text-center m-4">
+        <div className="text-center ">
           <h1 className="big-heading">Our team</h1>
         </div>
+        <br />
         <div className="row text-center">
           <div className=" mb-4 square-flip leader">
             <div className="aditya square">
@@ -128,8 +129,8 @@ function Teams2021(props) {
           <h2 className="big-heading">Core team members</h2>
         </div>
 
-        <div className="row text-center">
-          <div className="col-6 col-md-4">
+        <div className="row row1 text-center">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="prakhar square">
                 <div className="square-container">
@@ -160,7 +161,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="vidushi square">
                 <div className="square-container">
@@ -191,7 +192,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="gauransh square">
                 <div className="square-container">
@@ -225,7 +226,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="akash square">
                 <div className="square-container">
@@ -259,7 +260,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members mb-4">
               <div className="mohd square">
                 <div className="square-container">
@@ -290,7 +291,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className=" square-flip core-members">
               <div className="reeha square">
                 <div className="square-container">
@@ -324,7 +325,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="tushar square">
                 <div className="square-container">
@@ -352,14 +353,14 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="gdsc square"></div>
               <div className="gdsc square2"></div>
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="satyam square">
                 <div className="square-container">
@@ -393,7 +394,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="aman square">
                 <div className="square-container">
@@ -427,7 +428,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="piyush square">
                 <div className="square-container">
@@ -458,32 +459,32 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
-              <div className="dhairya square">
+              <div className="abhishek square">
                 <div className="square-container">
                   <div className="align-center">
-                    <img src={dhairya} height="200vh" width="180vw" alt="" />
+                    <img src={abhishek} height="200vh" width="180vw" alt="" />
                   </div>
-                  <h2 className="textshadow">Dhairya Khanna</h2>
+                  <h2 className="textshadow">Abhishek Rawat</h2>
                   <h3 className="textshadow">Open Source Mentor</h3>
                 </div>
                 <div className="flip-overlay"></div>
               </div>
-              <div className="dhairya square2">
+              <div className="abhishek square2">
                 <div className="square-container2">
                   <div className="align-center"></div>
                   <h2>Social Links</h2>
                   <a
-                    href="https://www.linkedin.com/in/dhairya-khanna/"
+                    href="https://www.linkedin.com/in/abshk-jr/"
                     className="fa fa-linkedin"
                   ></a>
                   <a
-                    href="https://mobile.twitter.com/DhairyaKhanna7"
+                    href="https://twitter.com/abshk_jr"
                     className="fa fa-twitter"
                   ></a>
                   <a
-                    href="https://github.com/Dhairya3124"
+                    href="https://github.com/abshk-jr"
                     className="fa fa-github"
                   ></a>
                 </div>
@@ -492,7 +493,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="nidhi square">
                 <div className="square-container">
@@ -526,7 +527,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="shraddha square">
                 <div className="square-container">
@@ -554,7 +555,7 @@ function Teams2021(props) {
             </div>
           </div>
 
-          <div className="col-6 col-md-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <div className="square-flip core-members">
               <div className="charvi square">
                 <div className="square-container">

@@ -32,12 +32,12 @@ function Teams2020(props) {
       <div className="teams">
         <div className="team-2021">
           <Link to="/team/2021">
-            <div>2021</div>
+            <div>Team-2021</div>
           </Link>
         </div>
         <div className="team-2020">
           <Link to="/team/2020">
-            <div>2020</div>
+            <div>Team-2020</div>
           </Link>
         </div>
       </div>

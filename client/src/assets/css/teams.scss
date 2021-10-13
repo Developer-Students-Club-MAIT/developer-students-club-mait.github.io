@@ -7,6 +7,12 @@ html {
   overflow-x: hidden;
 }
 
+.teams {
+  background-color: #9fe8f4;
+  display: flex;
+  justify-content: space-around;
+ }
+
 h1,
 h2 {
   color: #346df1;
@@ -17,7 +23,7 @@ h2 {
 .team-2020 {
   display: inline-block;
   position: relative;
-  left: 1250px;
+
   margin: 10px 5px;
 }
 

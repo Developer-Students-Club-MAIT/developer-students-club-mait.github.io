@@ -44,6 +44,7 @@
     "aos": "^2.3.4",
     "axios": "^0.20.0",
     "bootstrap": "^4.6.0",
+    "concurrently": "^6.3.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "json-import-loader": "^2.0.0",
