@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BhupenPal/MERN-Webpack-Boilerplate.git"
+    "url": ""
   },
-  "author": "Bhupen Pal",
+  "author": "Bhupen Pal , Prakhar Sharma , Vidushi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/BhupenPal/MERN-Webpack-Boilerplate#readme",
+  "homepage": "",
   "devDependencies": {
     "concurrently": "^6.2.0"
   },
