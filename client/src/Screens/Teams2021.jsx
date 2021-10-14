@@ -135,7 +135,7 @@ function Teams2021(props) {
               <div className="prakhar square">
                 <div className="square-container">
                   <div className="align-center">
-                    <img src={prakhar} height="200vh" width="180vw" alt="" />
+                      <img src={prakhar} height="200vh" width="180vw" alt="" />
                   </div>
                   <h2 className="textshadow">Prakhar Sharma</h2>
                   <h3 className="textshadow">Sr. Web Developer</h3>

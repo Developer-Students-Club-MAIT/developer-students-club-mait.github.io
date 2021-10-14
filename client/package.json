@@ -8,7 +8,7 @@
     "build": "webpack --config=webpack.config.prod.js",
     "start": "webpack-dev-server --config=webpack.config.dev.js --open"
   },
-  "author": "Bhupen Pal",
+  "author": "Bhupen Pal, Prakhar Sharma , Vidushi",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.2",
