@@ -13,7 +13,7 @@ import charvi from "../assets/profilePictures/profilePictures2021/charvi.jpg";
 import nidhi from "../assets/profilePictures/profilePictures2021/nidhi.jpeg";
 import tushar from "../assets/profilePictures/profilePictures2021/tushar.jpg";
 import aman from "../assets/profilePictures/profilePictures2021/aman.jpg";
-import prakhar from "../assets/profilePictures/profilePictures2021/Prakhar.jpg";
+import prakhar from "../assets/profilePictures/profilePictures2021/prakhar.jpg";
 import shraddha from "../assets/profilePictures/profilePictures2021/shraddha.jpg";
 import piyush from "../assets/profilePictures/profilePictures2021/piyush.png";
 import vidushi from "../assets/profilePictures/profilePictures2021/vidushi.jpeg";
