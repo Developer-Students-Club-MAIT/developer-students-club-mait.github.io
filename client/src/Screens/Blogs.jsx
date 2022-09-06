@@ -5,26 +5,37 @@ import '../assets/css/Blogs.scss'
 
 function Blogs(props) {
     const [PostData, setPostData] = useState(null);
+    const [NewPostData, setNewPostData] = useState(null);
     const [Loading, setLoading] = useState(false);
 
     useEffect(() => {
-        window.scroll(0,0)
+        window.scroll(0, 0)
         async function FetchBlogsAPI() {
             setLoading(true)
-            
-            await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/dscmait`)
-            .then(doc => doc.json())
-            .then(posts => {
-                setPostData(posts.items)
-                setLoading(false)
 
-            })
-            .catch(err => console.log(err))
+            //Old Medium Blogs
+            await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/dscmait`)
+                .then(doc => doc.json())
+                .then(posts => {
+                    setPostData(posts.items)
+                    setLoading(false)
+
+                })
+                .catch(err => console.log(err))
+
+            //New Medium Blogs (2022 onwards)
+            await fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@gdscmait`)
+                .then(doc => doc.json())
+                .then(posts => {
+                    setNewPostData(posts.items)
+                    setLoading(false)
+                })
+                .catch(err => console.log(err))
         }
         FetchBlogsAPI()
     }, [])
-    if(Loading){
-        return <Loader/>
+    if (Loading) {
+        return <Loader />
     }
     return (
         <Grid container component='main'>
@@ -75,7 +86,7 @@ function Blogs(props) {
                         })
                     )
                     :
-                    <Loader/>
+                    <Loader />
                 }
             </Grid>
         </Grid>
