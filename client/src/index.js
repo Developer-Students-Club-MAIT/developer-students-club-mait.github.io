@@ -16,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // import Teams2021 from "./Screens/Teams2021.jsx";
 
 const Home = lazy(() => import("./Screens/Home.jsx"));
-const Teams2020 = lazy(() => import("./Screens/Teams2020.jsx"));
+const Teams2020 = lazy(() => import("./Screens/Teams2022.jsx"));
 const Teams2021 = lazy(() => import("./Screens/Teams2021.jsx"));
 const Blogs = lazy(() => import("./Screens/Blogs.jsx"));
 

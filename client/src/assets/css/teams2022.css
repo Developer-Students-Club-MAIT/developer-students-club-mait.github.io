@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Ralewey', sans-serif;
+    box-sizing:border-box;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inner{
+    max-width:1400px;
+    margin: 0 auto;
+}
+.team-container{
+    width: 100%;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
