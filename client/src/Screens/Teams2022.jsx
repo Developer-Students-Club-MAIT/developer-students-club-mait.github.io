@@ -1,22 +1,22 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 import '../assets/css/teams2022.css'
-import rajatKumar from '../assets/profilePictures/profilePictures2022/ Rajat Dev.jpg'
-import anshGoyal from '../assets/profilePictures/profilePictures2022/Ansh Goyal.jpeg'
+import anshGoyal from '../assets/profilePictures/profilePictures2022/Ansh Goyal.jpg'
+import bhavyaGiri from '../assets/profilePictures/profilePictures2022/Bhavya Giri.jpg'
 import dakshMakhija from '../assets/profilePictures/profilePictures2022/Daksh Makhija.jpg'
-import dishantNagpal from '../assets/profilePictures/profilePictures2022/Daksh Makhija.jpg'
-import isharJain from '../assets/profilePictures/profilePictures2022/Ishar Jain.jpg'
-import rohanAditya from '../assets/profilePictures/profilePictures2022/Rohan Aditya.jpeg'
+import dishantNagpal from '../assets/profilePictures/profilePictures2022/Dishant Nagpal.jpg'
+import rajatKumar from '../assets/profilePictures/profilePictures2022/Rajat Dev.jpg'
+import rohanAditya from '../assets/profilePictures/profilePictures2022/Rohan Aditya.jpg'
 import sahilRohera from '../assets/profilePictures/profilePictures2022/Sahil Rohera.jpg'
 import souravAggarwal from '../assets/profilePictures/profilePictures2022/Sourav Aggarwal.jpg'
 import vikasSingh from '../assets/profilePictures/profilePictures2022/Vikas Singh.jpg'
-
 const Teams2022 = () => {
     const [members,setMembers] = useState([
         {
             name:'Bhumika Chopra',
             title:'Lead',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -32,7 +32,7 @@ const Teams2022 = () => {
         {
             name:'Bhavya Giri',
             title:'Outreach Head',
-            img:'',
+            img:bhavyaGiri,
             github:'https://github.com/bhavya-giri',
             linkedin:'https://www.linkedin.com/in/bhavyagiri/',
             twitter:'https://twitter.com/BhavyaGiri_'
@@ -40,7 +40,7 @@ const Teams2022 = () => {
         {
             name:'Arnav Gupta',
             title:'Creative Design Head',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -48,7 +48,7 @@ const Teams2022 = () => {
         {
             name:'Aryan Mathur',
             title:'Research Head',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -56,7 +56,7 @@ const Teams2022 = () => {
         {
             name:'Ajay Pathak',
             title:'Cloud Mentor',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -88,7 +88,7 @@ const Teams2022 = () => {
         {
             name:'Nawed Ali',
             title:'Blockchain Mentor',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -104,7 +104,7 @@ const Teams2022 = () => {
         {
             name:'Aditya',
             title:'Graphic Designer',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -112,7 +112,7 @@ const Teams2022 = () => {
         {
             name:'Dhruv Chopra',
             title:'Content Writer',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -128,7 +128,7 @@ const Teams2022 = () => {
         {
             name:'Ishar Jain',
             title:'Jr Web Developer',
-            img:isharJain,
+            img:dishantNagpal,
             github:'www.github.com/ishar19',
             linkedin:'www.linkedin.com/in/ishar-jain-8401031b5',
             twitter:'www.twitter.com/ishartwt'
@@ -144,7 +144,7 @@ const Teams2022 = () => {
         {
             name:'Jiya Verma',
             title:'Graphic Designer',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -152,7 +152,7 @@ const Teams2022 = () => {
         {
             name:'Taniya Sharma',
             title:'Competitive Programmer',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -160,7 +160,7 @@ const Teams2022 = () => {
         {
             name:'Suraj Uppal',
             title:'ML Mentor',
-            img:'',
+            img:dishantNagpal,
             github:'',
             linkedin:'',
             twitter:''
@@ -202,8 +202,28 @@ const Teams2022 = () => {
     })
   return (
     <div className='team-container'>
-        <h1>Our Team</h1>
+        <div className="teams">
+      <div className="team-2022">
+        <Link to="/team/2022">
+            <div>Team-2022</div>
+          </Link>
+        </div>
+        <div className="team-2021">
+        <Link to="/team/2021">
+            <div>Team-2021</div>
+          </Link>
+        </div>
+        <div className="team-2020">
+          <Link to="/team/2020">
+            <div>Team-2020</div>
+          </Link>
+        </div>
+      </div>
+        <h1 className='heading'>Our Team</h1>
+        <div className='grid'>
         {membersCard}
+        </div>
+        
     </div>
   )
 }

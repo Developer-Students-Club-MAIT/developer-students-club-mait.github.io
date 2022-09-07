@@ -34,7 +34,13 @@ function Teams2021(props) {
   return (
     <div className="html">
       {/* DSC Lead------------------------------------------------- */}
+      
       <div className="teams">
+      <div className="team-2022">
+        <Link to="/team/2022">
+            <div>Team-2022</div>
+          </Link>
+        </div>
         <div className="team-2021">
         <Link to="/team/2021">
             <div>Team-2021</div>

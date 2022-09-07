@@ -44,7 +44,7 @@ function Nav(props) {
           </Link>
         </div>
         <div className="layout__nav">
-          <Link to="/team/2021">
+          <Link to="/team/2022">
             <div>
               <img className="layout__nav__icon" src={TeamsIcon} alt="icon" />
             </div>

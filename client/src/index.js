@@ -16,8 +16,9 @@ import "bootstrap/dist/css/bootstrap.css";
 // import Teams2021 from "./Screens/Teams2021.jsx";
 
 const Home = lazy(() => import("./Screens/Home.jsx"));
-const Teams2020 = lazy(() => import("./Screens/Teams2022.jsx"));
+const Teams2020 = lazy(() => import("./Screens/Teams2020.jsx"));
 const Teams2021 = lazy(() => import("./Screens/Teams2021.jsx"));
+const Teams2022 = lazy(() => import("./Screens/Teams2022.jsx"));
 const Blogs = lazy(() => import("./Screens/Blogs.jsx"));
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/projects" exact component={Projects} />
+              <Route path="/team/2022" exact component={Teams2022} />
               <Route path="/team/2020" exact component={Teams2020} />
               <Route path="/team/2021" exact component={Teams2021} />
               <Route path="/blogs" exact component={Blogs} />
