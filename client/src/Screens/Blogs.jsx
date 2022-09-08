@@ -59,7 +59,7 @@ function Blogs(props) {
                             Description = Description.querySelector("p").innerHTML
                             return (
                                 <Grid item sm={12} md={6} key={index}>
-                                    <div style={{ width: '75%', margin: '30px auto', boxShadow: "10px 10px 5px 0px rgba(108,235,220,0.75)", }} className='blog-content-box'>
+                                    <div style={{ width: '75%', margin: '30px auto', boxShadow: "8px 8px 5px 0px #acf2fd" }} className='blog-content-box'>
                                         <img src={BackgroundImg} alt="" style={{ height: '100%', width: '100%' }} />
                                         <div style={{ padding: 15, }}>
                                             <Typography variant='h3' style={{ fontSize: "24px", color: '#EA4335', fontWeight: 600, fontFamily: 'Poppins', }} className='blog-title'>{post.title}</Typography>
@@ -74,7 +74,7 @@ function Blogs(props) {
                                                 </div>
                                                 <div>
                                                     <a href={post.link} target="_blank">
-                                                        <button style={{ width: "fit-content", padding: "7px", color: "black", backgroundImage: `linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335)` }} className="project-button">
+                                                        <button style={{ width: "fit-content", padding: "7px", color: "white", backgroundColor: "#00e626" }} className="project-button">
                                                             Read Now{" "}
                                                             <i
                                                                 className="fas fa-external-link-alt"
