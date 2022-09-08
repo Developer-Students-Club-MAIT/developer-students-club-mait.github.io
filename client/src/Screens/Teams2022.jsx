@@ -199,17 +199,17 @@ const Teams2022 = () => {
                   <p>{member.name}</p>
                   <div className="socials mt-20">
                     {member.github && (
-                      <a href={member.github}>
+                      <a href={member.github} target="_blank">
                         <span className="fa fa-github"></span>
                       </a>
                     )}
                     {member.linkedin && (
-                      <a href={member.linkedin}>
+                      <a href={member.linkedin} target="_blank">
                         <span className="fa fa-linkedin"></span>
                       </a>
                     )}
                     {member.twitter && (
-                      <a href={member.twitter}>
+                      <a href={member.twitter} target="_blank">
                         <span className="fa fa-twitter"></span>
                       </a>
                     )}
