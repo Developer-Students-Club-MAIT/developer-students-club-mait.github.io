@@ -52,7 +52,7 @@ const Teams2022 = () => {
       name: "Arnav Gupta",
       title: "Creative Design Head",
       img: arnavGupta,
-      github: "https://github.com/arnavvgupta/SMfinder",
+      github: "https://github.com/arnavvgupta/",
       linkedin: "https://www.linkedin.com/in/arnav-gupta-b1715121b",
       twitter: "",
     },
@@ -79,7 +79,7 @@ const Teams2022 = () => {
       github: "https://github.com/vikas70607",
       linkedin: "https://www.linkedin.com/in/vikas-singh-233a28229",
       twitter:
-        "https://twitter.com/sanguine_spirt?t=U24aHrEANt0OMc9sR_Tx9Q&s=09",
+        "https://twitter.com/sanguine_spirt",
     },
     {
       name: "Rohan Aditya",
@@ -95,7 +95,7 @@ const Teams2022 = () => {
       img: anshGoyal,
       github: "https://github.com/AnshGoyal27",
       linkedin: "https://www.linkedin.com/in/ansh-goyal-211623228",
-      twitter: "https://twitter.com/AnshGoyal27?s=08",
+      twitter: "https://twitter.com/AnshGoyal27",
     },
     {
       name: "Nawed Ali",
@@ -119,7 +119,7 @@ const Teams2022 = () => {
       img: aditya,
       github: "https://www.github.com/Hey-Aditya",
       linkedin: "https://www.linkedin.com/in/hey-aditya",
-      twitter: "ttps://www.twitter.com/in/HeyyAdityaa",
+      twitter: "https://www.twitter.com/HeyyAdityaa",
     },
     {
       name: "Dhruv Chopra",
@@ -127,7 +127,7 @@ const Teams2022 = () => {
       img: dhruvChopra,
       github: "https://github.com/dhruvchopra2003",
       linkedin: "https://www.linkedin.com/in/dhruvchopra2003",
-      twitter: "ttps://www.twitter.com/in/DhruvC1",
+      twitter: "https://www.twitter.com/DhruvC1",
     },
     {
       name: "Daksh Makhija",
@@ -141,9 +141,9 @@ const Teams2022 = () => {
       name: "Ishar Jain",
       title: "Jr Web Developer",
       img: isharJain,
-      github: "www.github.com/ishar19",
-      linkedin: "www.linkedin.com/in/ishar-jain-8401031b5",
-      twitter: "www.twitter.com/ishartwt",
+      github: "https://www.github.com/ishar19",
+      linkedin: "https://www.linkedin.com/in/ishar-jain-8401031b5",
+      twitter: "https://www.twitter.com/ishartwt",
     },
     {
       name: "Rajat Kumar",
@@ -152,7 +152,7 @@ const Teams2022 = () => {
       github: "https://www.github.com/loyaltytrooper",
       linkedin: "https://www.linkedin.com/in/rajat-dev",
       twitter:
-        "https://twitter.com/LoyaltyTrooper?t=jtBVB4h9_3lEm2x9ftASLA&s=09",
+        "https://twitter.com/LoyaltyTrooper",
     },
     {
       name: "Jiya Verma",
@@ -160,7 +160,7 @@ const Teams2022 = () => {
       img: jiyaVerma,
       github: " https://github.com/jvrox",
       linkedin: "https://www.linkedin.com/in/jiya-verma-05511a226",
-      twitter: "https://twitter.com/jvrox_x?t=8jW8-a94-PPZKJ1nCGW3ww&s=09",
+      twitter: "https://twitter.com/jvrox_x",
     },
     {
       name: "Taniya Sharma",
