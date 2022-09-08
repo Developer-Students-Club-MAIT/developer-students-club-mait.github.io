@@ -11,15 +11,24 @@ import rohanAditya from '../assets/profilePictures/profilePictures2022/Rohan Adi
 import sahilRohera from '../assets/profilePictures/profilePictures2022/Sahil Rohera.jpg'
 import souravAggarwal from '../assets/profilePictures/profilePictures2022/Sourav Aggarwal.jpg'
 import vikasSingh from '../assets/profilePictures/profilePictures2022/Vikas Singh.jpg'
+import bhumikaChopra from '../assets/profilePictures/profilePictures2022/Bhumika Chopra.jpg'
+import arnavGupta from '../assets/profilePictures/profilePictures2022/Arnav Gupta.jpeg'
+import nawedAli from '../assets/profilePictures/profilePictures2022/Nawed Ali.jpg'
+import aditya from '../assets/profilePictures/profilePictures2022/Aditya.jpg'
+import dhruvChopra from '../assets/profilePictures/profilePictures2022/Dhruv Chopra.jpeg'
+import surajUppal from '../assets/profilePictures/profilePictures2022/Suraj Uppal.jpeg'
+import taniyaSharma from '../assets/profilePictures/profilePictures2022/Taniya Sharma.jpg'
+import isharJain from '../assets/profilePictures/profilePictures2022/Ishar Jain.jpg'
+import aryanMathur from '../assets/profilePictures/profilePictures2022/Aryan Mathur.jpeg'
 const Teams2022 = () => {
     const [members,setMembers] = useState([
         {
             name:'Bhumika Chopra',
             title:'Lead',
-            img:dishantNagpal,
-            github:'',
-            linkedin:'',
-            twitter:''
+            img:bhumikaChopra,
+            github:'https://github.com/BhumikaChopra3',
+            linkedin:'https://www.linkedin.com/in/bhumika-chopra-673951203',
+            twitter:'https://mobile.twitter.com/bhumikachopra7'
         },
         {
             name:'Sourav Aggarwal',
@@ -40,18 +49,18 @@ const Teams2022 = () => {
         {
             name:'Arnav Gupta',
             title:'Creative Design Head',
-            img:dishantNagpal,
-            github:'',
-            linkedin:'',
+            img:arnavGupta,
+            github:'https://github.com/arnavvgupta/SMfinder',
+            linkedin:'https://www.linkedin.com/in/arnav-gupta-b1715121b',
             twitter:''
         },
         {
             name:'Aryan Mathur',
             title:'Research Head',
-            img:dishantNagpal,
+            img:aryanMathur,
             github:'',
-            linkedin:'',
-            twitter:''
+            linkedin:'https://www.linkedin.com/in/aryan-mathur-307b3721a',
+            twitter:'https://twitter.com/llaryanll'
         },
         {
             name:'Ajay Pathak',
@@ -88,10 +97,10 @@ const Teams2022 = () => {
         {
             name:'Nawed Ali',
             title:'Blockchain Mentor',
-            img:dishantNagpal,
-            github:'',
+            img:nawedAli,
+            github:'https://github.com/nawed2611',
             linkedin:'',
-            twitter:''
+            twitter:'https://twitter.com/nawed2611'
         },
         {
             name:'Sahil Rohera',
@@ -104,18 +113,18 @@ const Teams2022 = () => {
         {
             name:'Aditya',
             title:'Graphic Designer',
-            img:dishantNagpal,
-            github:'',
-            linkedin:'',
-            twitter:''
+            img:aditya,
+            github:'https://www.github.com/Hey-Aditya',
+            linkedin:'https://www.linkedin.com/in/hey-aditya',
+            twitter:'ttps://www.twitter.com/in/HeyyAdityaa'
         },
         {
             name:'Dhruv Chopra',
             title:'Content Writer',
-            img:dishantNagpal,
-            github:'',
-            linkedin:'',
-            twitter:''
+            img:dhruvChopra,
+            github:'https://github.com/dhruvchopra2003',
+            linkedin:'https://www.linkedin.com/in/dhruvchopra2003',
+            twitter:'ttps://www.twitter.com/in/DhruvC1'
         },
         {
             name:'Daksh Makhija',
@@ -128,7 +137,7 @@ const Teams2022 = () => {
         {
             name:'Ishar Jain',
             title:'Jr Web Developer',
-            img:dishantNagpal,
+            img:isharJain,
             github:'www.github.com/ishar19',
             linkedin:'www.linkedin.com/in/ishar-jain-8401031b5',
             twitter:'www.twitter.com/ishartwt'
@@ -152,17 +161,17 @@ const Teams2022 = () => {
         {
             name:'Taniya Sharma',
             title:'Competitive Programmer',
-            img:dishantNagpal,
+            img:taniyaSharma,
             github:'',
-            linkedin:'',
-            twitter:''
+            linkedin:'https://www.linkedin.com/in/taniya-sharma-36386b1ba',
+            twitter:'https://twitter.com/taniya_sharma5'
         },
         {
             name:'Suraj Uppal',
             title:'ML Mentor',
-            img:dishantNagpal,
-            github:'',
-            linkedin:'',
+            img:surajUppal,
+            github:'https://github.com/SurajUppal21',
+            linkedin:'https://www.linkedin.com/in/suraj-uppal-06224221a/',
             twitter:''
         },
         {
@@ -186,9 +195,10 @@ const Teams2022 = () => {
                                 <div className='team-details text-center'>
                                     <p>{member.name}</p>
                                     <div className='socials mt-20'>
-                                        <a href={member.github}><span className='fa fa-github'></span></a>
-                                        <a href={member.linkedin}><span className='fa fa-linkedin'></span></a>
-                                        <a href={member.twitter}><span className='fa fa-twitter'></span></a>
+                                        {member.github &&<a href={member.github}><span className='fa fa-github'></span></a> }
+                                        {member.linkedin && <a href={member.linkedin}><span className='fa fa-linkedin'></span></a> }
+                                        {member.twitter &&  <a href={member.twitter}><span className='fa fa-twitter'></span></a> }
+                                       
                                     </div>
                                 </div>
                             </div>
