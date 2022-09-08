@@ -20,7 +20,8 @@ import surajUppal from "../assets/profilePictures/profilePictures2022/Suraj Uppa
 import taniyaSharma from "../assets/profilePictures/profilePictures2022/Taniya Sharma.jpg";
 import isharJain from "../assets/profilePictures/profilePictures2022/Ishar Jain.jpeg";
 import aryanMathur from "../assets/profilePictures/profilePictures2022/Aryan Mathur.jpeg";
-import jiyaVerma from '../assets/profilePictures/profilePictures2022/Jiya Verma.jpg'
+import jiyaVerma from "../assets/profilePictures/profilePictures2022/Jiya Verma.jpg";
+import ajayPathak from '../assets/profilePictures/profilePictures2022/Ajay Pathak.jpg'
 const Teams2022 = () => {
   const [members, setMembers] = useState([
     {
@@ -66,7 +67,7 @@ const Teams2022 = () => {
     {
       name: "Ajay Pathak",
       title: "Cloud Mentor",
-      img: dishantNagpal,
+      img: ajayPathak,
       github: "",
       linkedin: "",
       twitter: "",
