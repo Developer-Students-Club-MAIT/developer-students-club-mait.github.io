@@ -196,7 +196,6 @@ const Teams2022 = () => {
               <img src={member.img} />
               <div className="overlay">
                 <div className="team-details text-center">
-                  <p>{member.name}</p>
                   <div className="socials mt-20">
                     {member.github && (
                       <a href={member.github}>
