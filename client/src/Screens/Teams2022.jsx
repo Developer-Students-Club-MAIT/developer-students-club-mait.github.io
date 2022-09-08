@@ -12,11 +12,11 @@ import sahilRohera from "../assets/profilePictures/profilePictures2022/Sahil Roh
 import souravAggarwal from "../assets/profilePictures/profilePictures2022/Sourav Aggarwal.jpg";
 import vikasSingh from "../assets/profilePictures/profilePictures2022/Vikas Singh.jpg";
 import bhumikaChopra from "../assets/profilePictures/profilePictures2022/Bhumika Chopra.jpg";
-import arnavGupta from "../assets/profilePictures/profilePictures2022/Arnav Gupta.jpeg";
+import arnavGupta from "../assets/profilePictures/profilePictures2022/Arnav Gupta.jpg";
 import nawedAli from "../assets/profilePictures/profilePictures2022/Nawed Ali.jpg";
 import aditya from "../assets/profilePictures/profilePictures2022/Aditya.jpg";
 import dhruvChopra from "../assets/profilePictures/profilePictures2022/Dhruv Chopra.jpeg";
-import surajUppal from "../assets/profilePictures/profilePictures2022/Suraj Uppal.jpeg";
+import surajUppal from "../assets/profilePictures/profilePictures2022/Suraj Uppal.jpg";
 import taniyaSharma from "../assets/profilePictures/profilePictures2022/Taniya Sharma.jpg";
 import isharJain from "../assets/profilePictures/profilePictures2022/Ishar Jain.jpeg";
 import aryanMathur from "../assets/profilePictures/profilePictures2022/Aryan Mathur.jpeg";
