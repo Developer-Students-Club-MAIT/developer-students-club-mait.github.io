@@ -128,3 +128,10 @@
   color: rgb(17, 13, 13);
   background-color: #fff;
 }
+a{
+  margin-left:10px;
+}
+svg:hover {
+fill:#000;
+
+}
