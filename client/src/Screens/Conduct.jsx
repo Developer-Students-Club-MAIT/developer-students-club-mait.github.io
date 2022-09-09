@@ -83,7 +83,7 @@ function Conduct() {
         question, raise any issue or report any matter without worrying about
         retaliation. Any incident of unacceptable behavior can be mailed
         directly to the DSC Lead at{" "}
-        <a style={{ color: "blue" }}>deepikarana500@gmail.com</a>
+        <a style={{ color: "blue" }}>gdscmait@gmail.com</a>. 
         However, all this should be done in a disciplined manner.
       </p>
 

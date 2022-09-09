@@ -7,7 +7,6 @@ import "../assets/css/events.scss";
 
 const Events = () => {
   const data = events.results;
-  console.log(data);
 
   const toTimestamp = (strDate) => {
     strDate = strDate.split("-");
@@ -40,7 +39,7 @@ const Events = () => {
           <Row>
             <Col>
               <h3 className="mx-4 mt-2 mb-5">
-                There are no upcoming events as of now. Stay tuned!
+                Check out our <a href="https://gdsc.community.dev/maharaja-agrasen-institute-of-technology-delhi/" target="_blank" style={{ color: "red", textDecoration: "none" }}><u>events page</u></a> for information related to events.
               </h3>
             </Col>
           </Row>
