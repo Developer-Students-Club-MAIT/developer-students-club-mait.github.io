@@ -22,6 +22,7 @@ import isharJain from "../assets/profilePictures/profilePictures2022/Ishar Jain.
 import aryanMathur from "../assets/profilePictures/profilePictures2022/Aryan Mathur.jpeg";
 import jiyaVerma from "../assets/profilePictures/profilePictures2022/Jiya Verma.jpg";
 import ajayPathak from '../assets/profilePictures/profilePictures2022/Ajay Pathak.jpg'
+import shauryamSaxena from "../assets/profilePictures/profilePictures2022/Shauryam Saxena.jpg"
 const Teams2022 = () => {
   const [members, setMembers] = useState([
     {
@@ -184,6 +185,14 @@ const Teams2022 = () => {
       img: dishantNagpal,
       github: "https://github.com/Dishant10",
       linkedin: "https://www.linkedin.com/in/dishant-nagpal-6a365019a/",
+      twitter: "https://twitter.com/DishantNagpal10",
+    },
+    {
+      name: "Shauryam Saxena",
+      title: "Android Developer",
+      img: shauryamSaxena,
+      github: "https://github.com/shauryam-exe",
+      linkedin: "https://www.linkedin.com/in/shauryam-saxena-024966216/",
       twitter: "https://twitter.com/DishantNagpal10",
     },
   ]);
